@@ -1,0 +1,130 @@
+@import "compass";
+@import url(https://fonts.googleapis.com/css?family=Abel);
+$baseFontFamily :"游ゴシック", YuGothic, "メイリオ",Verdana, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+
+$baseColor: #fdfcf6;
+$subColor: #178844;
+$keyColor: #ff0000;
+$fontColor: #000000;
+
+html{ font-size: 62.5%; }
+
+body{
+    color: $fontColor;
+    font-size:1.4rem;
+    font-family: #baseFontFamily;
+    line-height:1.6;
+    letter-spacing:0.1em;
+    background-color: #baseColor;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.block-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.abel {
+    font-family: 'Abel', sans-serif;
+}
+
+.box {
+    background-image: url("../images/clouds-cloudy-agriculture-farm.jpg");
+    height: 500px;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+}
+
+@media (max-width: 768px){
+    .box {
+        height: 250px;
+    }
+}
+
+.title {
+    display: block;
+    padding: 30px;
+    color: $keyColor;
+    font-size: 3.2rem;
+    font-weight: bold;
+}
+section {
+    padding: 60px 0;
+    .container {
+      width: 90%;
+      @extend .block-center;
+ }
+ h2 {
+     @extend .abel;
+     font-size: 3.2rem;
+     font-weight : bold;
+ }
+}
+
+#situations {
+    background-color: $subColor;
+    .container {
+        @include display-flex;
+        justify-content: space-between;
+        @include flex-direction(column);
+    }
+    h2 {
+        color: $baseColor;
+        margin-bottom: 60px;
+    }
+    .situation-box {
+        @include flex(1);
+        margin: 10px 0;
+        padding: 20px;
+        background-color: $baseColor;
+        @include border-radius(4px);
+        @include box-sizing(border-box);
+    }
+    h3 {
+        @extend .abel;
+        color: $keyColor;
+        margin-bottom:10px;
+        font-size: 2.4rem;
+        font-weight: bold;
+    }
+    p {
+        font-weight: bold;
+    }
+}
+
+@media (min-width: 768px){
+    #situations {
+        .container {
+            @include flex-direction(row);
+            justify-content: space-between;
+        }
+        .situation-box {
+            margin: 0 10px;
+        }
+    }
+}
+
+#translation {
+    p {
+        display: block;
+        font-size: 2rem;
+        font-weight: bold;
+        padding: 10px;
+    }
+    .button {
+        font-weight: bold;
+        display: block;
+        width: 250px;
+        margin: auto;
+        padding: 10px 0;
+        text-align: center;
+        color: $baseColor;
+        background-color: $subColor;
+        @include border-radius(6px);
+    }
+}

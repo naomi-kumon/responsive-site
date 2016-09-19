@@ -1,0 +1,105 @@
+@import url(https://fonts.googleapis.com/css?family=Abel);
+html {
+  font-size: 62.5%; }
+
+body {
+  color: #000000;
+  font-size: 1.4rem;
+  font-family: #baseFontFamily;
+  line-height: 1.6;
+  letter-spacing: 0.1em;
+  background-color: #baseColor; }
+
+.text-center {
+  text-align: center; }
+
+.block-center, section .container {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+.abel, section h2, #situations h3 {
+  font-family: 'Abel', sans-serif; }
+
+.box {
+  background-image: url("../images/clouds-cloudy-agriculture-farm.jpg");
+  height: 500px;
+  width: 100%;
+  background-size: cover;
+  background-position: center center; }
+
+@media (max-width: 768px) {
+  .box {
+    height: 250px; } }
+.title {
+  display: block;
+  padding: 30px;
+  color: #ff0000;
+  font-size: 3.2rem;
+  font-weight: bold; }
+
+section {
+  padding: 60px 0; }
+  section .container {
+    width: 90%; }
+  section h2 {
+    font-size: 3.2rem;
+    font-weight: bold; }
+
+#situations {
+  background-color: #178844; }
+  #situations .container {
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
+    -webkit-flex-direction: column;
+    flex-direction: column; }
+  #situations h2 {
+    color: #fdfcf6;
+    margin-bottom: 60px; }
+  #situations .situation-box {
+    -webkit-flex: 1;
+    flex: 1;
+    margin: 10px 0;
+    padding: 20px;
+    background-color: #fdfcf6;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+  #situations h3 {
+    color: #ff0000;
+    margin-bottom: 10px;
+    font-size: 2.4rem;
+    font-weight: bold; }
+  #situations p {
+    font-weight: bold; }
+
+@media (min-width: 768px) {
+  #situations .container {
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    justify-content: space-between; }
+  #situations .situation-box {
+    margin: 0 10px; } }
+#translation p {
+  display: block;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 10px; }
+#translation .button {
+  font-weight: bold;
+  display: block;
+  width: 250px;
+  margin: auto;
+  padding: 10px 0;
+  text-align: center;
+  color: #fdfcf6;
+  background-color: #178844;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px; }
+
+/*# sourceMappingURL=style.css.map */

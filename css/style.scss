@@ -12,10 +12,10 @@ html{ font-size: 62.5%; }
 body{
     color: $fontColor;
     font-size:1.4rem;
-    font-family: #baseFontFamily;
+    font-family:$baseFontFamily;
     line-height:1.6;
-    letter-spacing:0.1em;
-    background-color: #baseColor;
+    letter-spacing: 0.1em;
+    background-color: $baseColor;
 }
 
 .text-center {
@@ -34,20 +34,13 @@ body{
 
 .box {
     background-image: url("../images/clouds-cloudy-agriculture-farm.jpg");
-    height: 500px;
+    height: 250px;
     width: 100%;
     background-size: cover;
     background-position: center center;
 }
 
-@media (max-width: 768px){
-    .box {
-        height: 250px;
-    }
-}
-
 .title {
-    display: block;
     padding: 30px;
     color: $keyColor;
     font-size: 3.2rem;
@@ -97,7 +90,10 @@ section {
     }
 }
 
-@media (min-width: 768px){
+@media (min-width: 769px){
+    .box{
+        height: 500px;
+    }
     #situations {
         .container {
             @include flex-direction(row);
